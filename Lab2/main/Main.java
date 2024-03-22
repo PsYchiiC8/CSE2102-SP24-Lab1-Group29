@@ -20,7 +20,11 @@ public class Main {
 		BinaryOperator br_plus = new BinaryOperator('+');
 		Operand o1 = new Operand(8);
 		Operand o2 = new Operand(3);
+
 		Operand o3 = new Operand(br_plus.caculate(o1, o2));
+
+		int result = br_plus.caculate(o1, o2);
+		Operand o3 = new Operand();
 		System.out.println(o3.evaluate());
 
 		BinaryOperator br_smallerThan = new BinaryOperator('<');
